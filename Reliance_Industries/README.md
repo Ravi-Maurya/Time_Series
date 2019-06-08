@@ -23,7 +23,7 @@ Time series data have a natural temporal ordering. This makes time series analys
 
 Reliance Industries Limited (RIL) is an Indian conglomerate holding company headquartered in Mumbai, Maharashtra, India. Reliance owns businesses across India engaged in energy, petrochemicals, textiles, natural resources, retail, and telecommunications. Reliance is one of the most profitable companies in India, the largest publicly traded company in India by market capitalization, and the second largest company in India as measured by revenue after the government-controlled Indian Oil Corporation. On 18 October 2007, Reliance Industries became the first Indian company to breach $100 billion market capitalization. The company is ranked 203rd on the Fortune Global 500 list of the world's biggest corporations as of 2017. It is ranked 8th among the Top 250 Global Energy Companies by Platts as of 2016. Reliance continues to be India’s largest exporter, accounting for 8% of India's total merchandise exports with a value of Rs 147,755 crore and access to markets in 108 countries. Reliance is responsible for almost 5% of the government of India's total revenues from customs and excise duty. It is also the highest income tax payer in the private sector in India.<br>
 <b>The Data is varying non linearly.<b><br>
-![Close Value](https://github.com/Ravi-Maurya/Time-Series-Predictions/blob/master/Plots/ActualCloseValue.png)
+![Close Value](https://github.com/Ravi-Maurya/Time_Series/blob/master/Reliance_Industries/Plots/ActualCloseValue.png)
 
 ## Libraries
 
@@ -37,12 +37,12 @@ Reliance Industries Limited (RIL) is an Indian conglomerate holding company head
 ## Moving Average
 In time series analysis, the moving-average model (MA model), also known as moving-average process, is a common approach for modeling univariate time series. The moving-average model specifies that the output variable depends linearly on the current and various past values of a stochastic (imperfectly predictable) term.<br>
 Using This Model was not musch of use as the data was varying day by day inconsistently.<br>
-![Moving Average Model](https://github.com/Ravi-Maurya/Time-Series-Predictions/blob/master/Plots/MovingAvCloseValue.png)
+![Moving Average Model](https://github.com/Ravi-Maurya/Time_Series/blob/master/Reliance_Industries/Plots/MovingAvCloseValue.png)
 <hr>
 
 ## LSTM
 Long short-term memory (LSTM) units are units of a recurrent neural network (RNN). An RNN composed of LSTM units is often called an LSTM network (or just LSTM). A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.<br>
 LSTM networks are well-suited to classifying, processing and making predictions based on time series data, since there can be lags of unknown duration between important events in a time series. LSTMs were developed to deal with the exploding and vanishing gradient problems that can be encountered when training traditional RNNs. Relative insensitivity to gap length is an advantage of LSTM over RNNs, hidden Markov models and other sequence learning methods in numerous applications.<br>
-![LSTM Close](https://github.com/Ravi-Maurya/Time-Series-Predictions/blob/master/Plots/LSTM_Deeplearning_CloseValue.png)
+![LSTM Close](https://github.com/Ravi-Maurya/Time_Series/blob/master/Reliance_Industries/Plots/LSTM_Deeplearning_CloseValue.png)
 <br>
 Using this model resulted in very good predictions as it only gave loss of about: <b>0.0009</b>
